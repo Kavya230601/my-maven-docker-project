@@ -13,7 +13,7 @@ pipeline {
               steps{
                 sh "mvn install"
                 // sh "npm install --force"
-                sh "cd target/ && java -jar *.jar"
+                sh "cd target/ && java -jar *.jar &"
               }
           }
 
